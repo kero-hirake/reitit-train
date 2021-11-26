@@ -1,0 +1,15 @@
+{:duct.profile/base
+ {:duct.core/project-ns reitit-practice
+
+  :duct.router/cascading
+  [#ig/ref [:reitit-practice.handler/example]]
+
+  :reitit-practice.handler/example {}}
+
+ :duct.profile/dev   #duct/include "dev"
+ :duct.profile/local #duct/include "local"
+ :duct.profile/prod  {}
+
+ :duct.module/logging {}
+ :duct.module.web/api
+ {}}
